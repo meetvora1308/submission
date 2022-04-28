@@ -1,0 +1,27 @@
+This project is made in django
+
+Django :
+
+Django is a high-level Python web framework that encourages rapid development and clean, pragmatic design.
+
+Built by experienced developers, it takes care of the hassle of web development, so you can focus on writing your app without needing to reinvent the wheel. It’s free and open source.
+
+Django Document url : https://www.djangoproject.com/
+
+1. In this project I have create a Login and Register user api and register api
+
+url for Login user: http://127.0.0.1:8000/login_user/ method : POST
+url for Register user : http://127.0.0.1:8000/register_user/ method : POST
+
+2. I had made one assumption that user can edit update and delete address which user has only created :
+
+Details for model/Table that we have used is latitude, longtitude, address
+
+list of all address : http://127.0.0.1:8000/address/ method: GET
+list of create address : http://127.0.0.1:8000/address/ method: POST
+list of update a address : http://127.0.0.1:8000/address/{id} method: Patch
+list of delete a address : http://127.0.0.1:8000/address/{id} method: DELETE
+
+3. for search nearby it address I have used input parameter as latitude and longitude as a input parameter then it will find out address nearby 1.609 miles which we can modify
+
+search address : http://127.0.0.1:8000/address/ method = POST
